@@ -5,3 +5,4 @@
 
 ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head
 top
+ps -ef | awk '{print $2}'
